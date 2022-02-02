@@ -1,0 +1,96 @@
+body {
+  background-color: cyan;
+}
+
+@media only screen and (max-width: 65em) {
+  body {
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+  body header {
+    background-color: blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav {
+    background-color: red;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body nav div {
+    border: black solid 1px;
+    width: 100%;
+  }
+  body nav div h1 {
+    text-align: center;
+  }
+  body section {
+    background-color: yellow;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section #bloc1,
+  body section #bloc2,
+  body section #bloc3 {
+    background-color: green;
+    width: 50vw;
+    height: 200px;
+    text-align: center;
+    margin-top: 5vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section #bloc1 h1,
+  body section #bloc2 h1,
+  body section #bloc3 h1 {
+    font-size: 2rem;
+  }
+  body section #bloc1,
+  body section #bloc3 {
+    -webkit-transform: translateX(-30vw);
+            transform: translateX(-30vw);
+  }
+  body section #bloc2 {
+    -webkit-transform: translateX(30vw);
+            transform: translateX(30vw);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
