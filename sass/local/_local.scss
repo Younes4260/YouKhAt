@@ -1,0 +1,92 @@
+@import "../local/bulles";
+@import "../local/poisson";
+
+body {
+    background: $bleupale1;
+    background: -moz-linear-gradient(169deg, $bleupale1 9%, $bleupale2 19%, $bleu1 31%, $bleu2 43%, $bleufoncee1 56%, $bleufoncee2 74%, $bleufoncee3 89%);
+    background: -webkit-linear-gradient(169deg, $bleupale1 9%, $bleupale2 19%, $bleu1 31%, $bleu2 43%, $bleufoncee1 56%, $bleufoncee2 74%, $bleufoncee3 89%);
+    background: linear-gradient(169deg, $bleupale1 9%, $bleupale2 19%, $bleu1 31%, $bleu2 43%, $bleufoncee1 56%, $bleufoncee2 74%, $bleufoncee3 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bleupale1,endColorstr=$bleufoncee3,GradientType=1);
+}
+
+@include tablet {
+    body {
+
+    }
+}
+
+@include phone {
+    body {
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+        color: black;
+        height: 300vh;
+
+        header {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        nav {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            div {
+                margin: 0 5vw;
+                display: flex;
+                justify-content: space-around;
+
+                div {
+                    background-color: $bleubulle;
+                    border: black solid 1px;
+                    border-radius: 20px;
+                    width: 30vw;
+                h1 {
+                    text-align: center;
+                }
+            }
+            }
+
+        }
+
+        section {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #bloc1,
+            #bloc2,
+            #bloc3 {
+                width: 50vw;
+                height: 200px;
+                text-align: center;
+                margin-top: 5vh;
+                align-items: center;
+
+                h1 {
+                    font-size: 2rem;
+                    position: relative;
+                    right: 10vw;
+                }
+            }
+
+            #bloc1,
+            #bloc3 {
+                transform: translateX(-30vw);
+            }
+
+            #bloc2 {
+                transform: translateX(30vw);
+            }
+        }
+    }
+}
