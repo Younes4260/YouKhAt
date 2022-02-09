@@ -253,9 +253,109 @@ body {
   background: #00d4ff;
   background: linear-gradient(169deg, #00d4ff 9%, #17a9e0 19%, #1a7fbf 31%, #1c5d9f 43%, #0e3c7c 56%, #0d2059 74%, #130a58 89%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bleupale1, endColorstr=$bleufoncee3, GradientType=1);
+  margin: auto;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 37.5em) {
+body #login {
+  position: fixed;
+  height: 60vh;
+  width: 50vw;
+  top: 20vh;
+  right: 25vw;
+  background-color: #e2e3ff;
+  border: solid white 3px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+body #login #cotegauche {
+  width: 40vw;
+}
+
+body #login #cotegauche h1 {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+}
+
+body #login #cotegauche a {
+  text-decoration: none;
+}
+
+body #login #cotegauche form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 25px;
+  height: 50%;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+body #login #cotegauche form #inputlogin,
+body #login #cotegauche form #inputmotdepasse {
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body #login #cotegauche form #inputlogin label,
+body #login #cotegauche form #inputmotdepasse label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5vh;
+}
+
+body #login #cotegauche form #inputlogin input,
+body #login #cotegauche form #inputmotdepasse input {
+  width: 40vw;
+  height: 40px;
+  border-radius: 10px;
+  border: solid black 0.5px;
+}
+
+body #login #cotegauche form #Connecter {
+  width: 15vw;
+  min-height: 40px;
+  max-height: 50px;
+  border-radius: 5px;
+  background-color: #17a9e0;
+  border: solid white 1px;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+body #login #cotegauche form #Connecter:hover {
+  cursor: pointer;
+  background-color: #00d4ff;
+}
+
+body #login .bottomtext {
+  text-align: center;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body #login .bottomtext p {
+  margin: 0;
+}
+
+body #login .bottomtext p a {
+  font-size: 20px;
+  margin: 0 0.5vw;
+  color: #1a7fbf;
+}
+
+body #login .bottomtext p a:hover {
+  color: #0e3c7c;
+}
+
+@media only screen and (max-width: 65em) {
   body {
     margin: auto;
     overflow: hidden;
@@ -263,9 +363,9 @@ body {
   body #login {
     position: fixed;
     height: 60vh;
-    width: 70vw;
+    width: 50vw;
     top: 20vh;
-    right: 15vw;
+    right: 25vw;
     background-color: #e2e3ff;
     border: solid white 3px;
     border-radius: 50px;
@@ -279,7 +379,7 @@ body {
   }
   body #login #cotegauche h1 {
     color: black;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
   }
   body #login #cotegauche a {
@@ -292,7 +392,7 @@ body {
     border-radius: 25px;
     height: 50%;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 13vh;
   }
   body #login #cotegauche form #inputlogin,
   body #login #cotegauche form #inputmotdepasse {
@@ -331,6 +431,89 @@ body {
     margin: 0;
   }
   body #login .bottomtext p a {
+    font-size: 2vw;
+    margin: 0 0.5vw;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  body {
+    margin: auto;
+    overflow: hidden;
+  }
+  body #login {
+    position: fixed;
+    height: 60vh;
+    width: 60vw;
+    top: 15vh;
+    right: 20vw;
+    background-color: #e2e3ff;
+    border: solid white 3px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body #login #cotegauche {
+    width: 40vw;
+  }
+  body #login #cotegauche h1 {
+    color: black;
+    font-size: 5vw;
+    text-align: center;
+  }
+  body #login #cotegauche a {
+    text-decoration: none;
+  }
+  body #login #cotegauche form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+    align-items: center;
+    margin-bottom: 10vw;
+  }
+  body #login #cotegauche form #inputlogin,
+  body #login #cotegauche form #inputmotdepasse {
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body #login #cotegauche form #inputlogin label,
+  body #login #cotegauche form #inputmotdepasse label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5vh;
+  }
+  body #login #cotegauche form #inputlogin input,
+  body #login #cotegauche form #inputmotdepasse input {
+    width: 50vw;
+    height: 40px;
+    border-radius: 10px;
+    border: solid black 0.5px;
+  }
+  body #login #cotegauche form #Connecter {
+    width: 150px;
+    min-height: 40px;
+    max-height: 50px;
+    border-radius: 3px;
+    background-color: #17a9e0;
+    border: solid white 1px;
+    color: white;
+  }
+  body #login .bottomtext {
+    text-align: center;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body #login .bottomtext p {
+    margin: 1vh 0;
+  }
+  body #login .bottomtext p a {
+    font-size: 3vw;
     margin: 0 0.5vw;
   }
 }
