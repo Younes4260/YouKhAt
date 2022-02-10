@@ -1,23 +1,61 @@
 import logo from './logo.svg';
-import './App.css';
+const OnPrototype = false;
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <h1>Bienvenue!</h1>
+      <nav>
+        <div>    
+        <div 
+        class="bulle"
         >
-          Learn React
+        <h1>
+        <a 
+        href="">
+        YouKhAt
         </a>
-      </header>
+        </h1>
+        </div> 
+        </div>
+        </nav>
+        </header>
+    <section>
+        <div class="fish">
+            <div class="fish-body">
+                
+              <div 
+              class="eye">
+                <div 
+                class="pupil">
+                  
+                </div>
+              </div>
+            </div>
+            <div 
+            class="fin">
+            </div>
+            <div 
+            class="fin fin-bottom">
+            </div>
+          </div>
+        <div 
+        id = "bloc1" 
+        class="bullesection">
+            <h1>Avec React.js</h1>
+        </div>
+        <div 
+        id = "bloc2" 
+        class="bullesection">
+            <h1>Avec une base de données</h1>
+        </div>
+        <div 
+        id = "bloc3" 
+        class="bullesection">
+            <h1>Appris sur codeacadamy</h1>
+        </div>
+    </section>
     </div>
   );
 }

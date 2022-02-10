@@ -1,0 +1,302 @@
+/* Page du login */
+@import "../local/bulles";
+@import "../local/poisson";
+
+body {
+    background: $bleupale1;
+    background: -moz-linear-gradient(169deg, $bleupale1 9%, $bleupale2 19%, $bleu1 31%, $bleu2 43%, $bleufoncee1 56%, $bleufoncee2 74%, $bleufoncee3 89%);
+    background: -webkit-linear-gradient(169deg, $bleupale1 9%, $bleupale2 19%, $bleu1 31%, $bleu2 43%, $bleufoncee1 56%, $bleufoncee2 74%, $bleufoncee3 89%);
+    background: linear-gradient(169deg, $bleupale1 9%, $bleupale2 19%, $bleu1 31%, $bleu2 43%, $bleufoncee1 56%, $bleufoncee2 74%, $bleufoncee3 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bleupale1, endColorstr=$bleufoncee3, GradientType=1);
+
+    margin: auto;
+
+    #login {
+        position: fixed;
+        height: 60vh;
+        width: 50vw;
+        top: 20vh;
+        right: 25vw;
+        background-color: rgb(226, 227, 255);
+        border: solid white 3px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+        #cotegauche {
+            width: 40vw;
+
+            h1 {
+                color: black;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                border-radius: 25px;
+                height: 50%;
+                align-items: center;
+                margin-bottom: 10vh;
+
+                #inputlogin,
+                #inputmotdepasse {
+                    margin-bottom: 5vh;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: 0.9rem;
+                        margin-bottom: 0.5vh;
+                    }
+
+                    input {
+                        width: 40vw;
+                        height: 40px;
+                        border-radius: 10px;
+                        border: solid black 0.5px;
+                    }
+                }
+
+                #Connecter {
+                    width: 15vw;
+                    min-height: 40px;
+                    max-height: 50px;
+                    border-radius: 5px;
+                    background-color: $bleupale2;
+                    border: solid white 1px;
+                    color: white;
+                    transition: background-color 0.2s ease;
+
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $bleupale1;
+                    }
+                }
+            }
+
+        }
+
+        .bottomtext {
+            text-align: center;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+
+                a {
+                    font-size: 20px;
+                    margin: 0 0.5vw;
+                    color: $bleu1;
+
+                    &:hover {
+                        color: $bleufoncee1;
+                    }
+                }
+            }
+        }
+    }
+
+    overflow: hidden;
+}
+
+@include tablet {
+
+    body {
+        margin: auto;
+
+        #login {
+            position: fixed;
+            height: 60vh;
+            width: 50vw;
+            top: 20vh;
+            right: 25vw;
+            background-color: rgb(226, 227, 255);
+            border: solid white 3px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+
+            #cotegauche {
+                width: 40vw;
+
+                h1 {
+                    color: black;
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border-radius: 25px;
+                    height: 50%;
+                    align-items: center;
+                    margin-bottom: 13vh;
+
+                    #inputlogin,
+                    #inputmotdepasse {
+                        margin-bottom: 5vh;
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            font-size: 0.9rem;
+                            margin-bottom: 0.5vh;
+                        }
+
+                        input {
+                            width: 250px;
+                            height: 40px;
+                            border-radius: 10px;
+                            border: solid black 0.5px;
+                        }
+                    }
+
+                    #Connecter {
+                        width: 150px;
+                        min-height: 30px;
+                        max-height: 50px;
+                        border-radius: 5px;
+                        background-color: $bleupale2;
+                        border: solid white 1px;
+                        color: white;
+                    }
+                }
+
+            }
+
+            .bottomtext {
+                text-align: center;
+                height: 20px;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    margin: 0;
+
+                    a {
+                        font-size: 2vw;
+                        margin: 0 0.5vw;
+                    }
+                }
+            }
+        }
+
+        overflow: hidden;
+    }
+}
+
+@include phone {
+    body {
+        margin: auto;
+
+        #login {
+            position: fixed;
+            height: 60vh;
+            width: 60vw;
+            top: 15vh;
+            right: 20vw;
+            background-color: rgb(226, 227, 255);
+            border: solid white 3px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+
+            #cotegauche {
+                width: 40vw;
+
+                h1 {
+                    color: black;
+                    font-size: 5vw;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 50%;
+                    align-items: center;
+                    margin-bottom: 10vw;
+
+                    #inputlogin,
+                    #inputmotdepasse {
+                        margin-bottom: 5vh;
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            font-size: 0.9rem;
+                            margin-bottom: 0.5vh;
+                        }
+
+                        input {
+                            width: 50vw;
+                            height: 40px;
+                            border-radius: 10px;
+                            border: solid black 0.5px;
+                        }
+                    }
+
+                    #Connecter {
+                        width: 150px;
+                        min-height: 40px;
+                        max-height: 50px;
+                        border-radius: 3px;
+                        background-color: $bleupale2;
+                        border: solid white 1px;
+                        color: white;
+                    }
+                }
+
+            }
+
+            .bottomtext {
+                text-align: center;
+                height: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                p {
+                    margin: 1vh 0;
+
+                    a {
+                        font-size: 3vw;
+                        margin: 0 0.5vw;
+                    }
+                }
+            }
+        }
+
+        overflow: hidden;
+    }
+}
