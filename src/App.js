@@ -1,25 +1,22 @@
 import logo from './logo.svg';
-const OnPrototype = false;
 
 function App() {
+  function header() {
+    <nav>
+      <h1>Bienvenue!</h1>
+      <div>    
+      <div class="bulle" >
+      <h1>
+      <a href="">YouKhAt </a>
+      </h1>
+      </div> 
+      </div>
+      </nav>
+}
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Bienvenue!</h1>
-      <nav>
-        <div>    
-        <div 
-        class="bulle"
-        >
-        <h1>
-        <a 
-        href="">
-        YouKhAt
-        </a>
-        </h1>
-        </div> 
-        </div>
-        </nav>
+
         </header>
     <section>
         <div class="fish">
